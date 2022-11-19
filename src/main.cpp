@@ -43,14 +43,15 @@ long long RandPoint(int point_zero, int point_ac) {
 int main() {
     srand(time(NULL));
     freopen((NAME + ".txt").c_str(), "w", stdout);
+    cout <<"    \"solutions\":{\n";
     for (int id = 1; id <= NDATA; id++) {
-        cout << "\"" << id << "\":{" << "\n";
-        cout << "  \"user_id\":" << Rand(1, NUSER) << ",\n";
-        cout << "  \"problem_index\":" << Rand(1, NPROBLEM) << ",\n";
-        cout << "  \"point\":" << RandPoint(20, 30) << ",\n";
+        cout << "       \"" << id << "\":{" << "\n";
+        cout << "         \"user_id\":" << Rand(1, NUSER) << ",\n";
+        cout << "         \"problem_index\":" << Rand(1, NPROBLEM) << ",\n";
+        cout << "         \"point\":" << RandPoint(20, 30) << ",\n";
         cur_time = cur_time + Rand(0, TIME_DISTANCE);
-        cout << "  \"submitted_seconds\":" << cur_time << "\n";
-        cout << "},\n";
+        cout << "         \"submitted_seconds\":" << cur_time << "\n";
+        cout << "       },\n";
     }
     return 0;
 }
