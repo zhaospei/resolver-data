@@ -1,0 +1,600 @@
+"1":{
+  "user_id":3,
+  "problem_index":1,
+  "point":10,
+  "submitted_seconds":0
+},
+"2":{
+  "user_id":1,
+  "problem_index":2,
+  "point":45,
+  "submitted_seconds":0
+},
+"3":{
+  "user_id":3,
+  "problem_index":1,
+  "point":100,
+  "submitted_seconds":15
+},
+"4":{
+  "user_id":5,
+  "problem_index":3,
+  "point":93,
+  "submitted_seconds":15
+},
+"5":{
+  "user_id":4,
+  "problem_index":4,
+  "point":100,
+  "submitted_seconds":30
+},
+"6":{
+  "user_id":5,
+  "problem_index":4,
+  "point":0,
+  "submitted_seconds":36
+},
+"7":{
+  "user_id":3,
+  "problem_index":5,
+  "point":67,
+  "submitted_seconds":53
+},
+"8":{
+  "user_id":4,
+  "problem_index":1,
+  "point":14,
+  "submitted_seconds":67
+},
+"9":{
+  "user_id":1,
+  "problem_index":4,
+  "point":74,
+  "submitted_seconds":80
+},
+"10":{
+  "user_id":4,
+  "problem_index":1,
+  "point":100,
+  "submitted_seconds":86
+},
+"11":{
+  "user_id":5,
+  "problem_index":4,
+  "point":100,
+  "submitted_seconds":106
+},
+"12":{
+  "user_id":2,
+  "problem_index":3,
+  "point":34,
+  "submitted_seconds":107
+},
+"13":{
+  "user_id":5,
+  "problem_index":3,
+  "point":16,
+  "submitted_seconds":108
+},
+"14":{
+  "user_id":2,
+  "problem_index":3,
+  "point":0,
+  "submitted_seconds":117
+},
+"15":{
+  "user_id":1,
+  "problem_index":5,
+  "point":10,
+  "submitted_seconds":128
+},
+"16":{
+  "user_id":4,
+  "problem_index":3,
+  "point":100,
+  "submitted_seconds":137
+},
+"17":{
+  "user_id":2,
+  "problem_index":3,
+  "point":66,
+  "submitted_seconds":143
+},
+"18":{
+  "user_id":1,
+  "problem_index":5,
+  "point":100,
+  "submitted_seconds":151
+},
+"19":{
+  "user_id":4,
+  "problem_index":5,
+  "point":100,
+  "submitted_seconds":151
+},
+"20":{
+  "user_id":1,
+  "problem_index":1,
+  "point":0,
+  "submitted_seconds":154
+},
+"21":{
+  "user_id":5,
+  "problem_index":5,
+  "point":0,
+  "submitted_seconds":154
+},
+"22":{
+  "user_id":3,
+  "problem_index":5,
+  "point":100,
+  "submitted_seconds":164
+},
+"23":{
+  "user_id":2,
+  "problem_index":4,
+  "point":12,
+  "submitted_seconds":173
+},
+"24":{
+  "user_id":4,
+  "problem_index":1,
+  "point":0,
+  "submitted_seconds":173
+},
+"25":{
+  "user_id":2,
+  "problem_index":5,
+  "point":7,
+  "submitted_seconds":180
+},
+"26":{
+  "user_id":5,
+  "problem_index":1,
+  "point":1,
+  "submitted_seconds":192
+},
+"27":{
+  "user_id":4,
+  "problem_index":1,
+  "point":73,
+  "submitted_seconds":210
+},
+"28":{
+  "user_id":5,
+  "problem_index":1,
+  "point":64,
+  "submitted_seconds":225
+},
+"29":{
+  "user_id":5,
+  "problem_index":1,
+  "point":37,
+  "submitted_seconds":226
+},
+"30":{
+  "user_id":5,
+  "problem_index":1,
+  "point":0,
+  "submitted_seconds":226
+},
+"31":{
+  "user_id":1,
+  "problem_index":3,
+  "point":100,
+  "submitted_seconds":237
+},
+"32":{
+  "user_id":3,
+  "problem_index":5,
+  "point":73,
+  "submitted_seconds":253
+},
+"33":{
+  "user_id":5,
+  "problem_index":1,
+  "point":100,
+  "submitted_seconds":259
+},
+"34":{
+  "user_id":2,
+  "problem_index":4,
+  "point":100,
+  "submitted_seconds":268
+},
+"35":{
+  "user_id":2,
+  "problem_index":3,
+  "point":100,
+  "submitted_seconds":268
+},
+"36":{
+  "user_id":2,
+  "problem_index":5,
+  "point":81,
+  "submitted_seconds":283
+},
+"37":{
+  "user_id":2,
+  "problem_index":4,
+  "point":0,
+  "submitted_seconds":296
+},
+"38":{
+  "user_id":3,
+  "problem_index":1,
+  "point":100,
+  "submitted_seconds":316
+},
+"39":{
+  "user_id":5,
+  "problem_index":4,
+  "point":0,
+  "submitted_seconds":334
+},
+"40":{
+  "user_id":1,
+  "problem_index":2,
+  "point":44,
+  "submitted_seconds":343
+},
+"41":{
+  "user_id":1,
+  "problem_index":4,
+  "point":100,
+  "submitted_seconds":351
+},
+"42":{
+  "user_id":2,
+  "problem_index":1,
+  "point":100,
+  "submitted_seconds":353
+},
+"43":{
+  "user_id":2,
+  "problem_index":2,
+  "point":100,
+  "submitted_seconds":367
+},
+"44":{
+  "user_id":1,
+  "problem_index":4,
+  "point":56,
+  "submitted_seconds":367
+},
+"45":{
+  "user_id":5,
+  "problem_index":2,
+  "point":0,
+  "submitted_seconds":367
+},
+"46":{
+  "user_id":1,
+  "problem_index":2,
+  "point":89,
+  "submitted_seconds":367
+},
+"47":{
+  "user_id":5,
+  "problem_index":1,
+  "point":37,
+  "submitted_seconds":386
+},
+"48":{
+  "user_id":4,
+  "problem_index":1,
+  "point":88,
+  "submitted_seconds":386
+},
+"49":{
+  "user_id":1,
+  "problem_index":5,
+  "point":100,
+  "submitted_seconds":386
+},
+"50":{
+  "user_id":1,
+  "problem_index":1,
+  "point":31,
+  "submitted_seconds":389
+},
+"51":{
+  "user_id":1,
+  "problem_index":4,
+  "point":31,
+  "submitted_seconds":389
+},
+"52":{
+  "user_id":4,
+  "problem_index":2,
+  "point":100,
+  "submitted_seconds":403
+},
+"53":{
+  "user_id":4,
+  "problem_index":3,
+  "point":0,
+  "submitted_seconds":408
+},
+"54":{
+  "user_id":4,
+  "problem_index":5,
+  "point":10,
+  "submitted_seconds":411
+},
+"55":{
+  "user_id":2,
+  "problem_index":4,
+  "point":16,
+  "submitted_seconds":417
+},
+"56":{
+  "user_id":3,
+  "problem_index":1,
+  "point":88,
+  "submitted_seconds":434
+},
+"57":{
+  "user_id":1,
+  "problem_index":2,
+  "point":28,
+  "submitted_seconds":449
+},
+"58":{
+  "user_id":1,
+  "problem_index":1,
+  "point":4,
+  "submitted_seconds":463
+},
+"59":{
+  "user_id":5,
+  "problem_index":1,
+  "point":78,
+  "submitted_seconds":478
+},
+"60":{
+  "user_id":1,
+  "problem_index":5,
+  "point":45,
+  "submitted_seconds":478
+},
+"61":{
+  "user_id":1,
+  "problem_index":1,
+  "point":0,
+  "submitted_seconds":478
+},
+"62":{
+  "user_id":4,
+  "problem_index":1,
+  "point":79,
+  "submitted_seconds":478
+},
+"63":{
+  "user_id":4,
+  "problem_index":4,
+  "point":42,
+  "submitted_seconds":478
+},
+"64":{
+  "user_id":4,
+  "problem_index":1,
+  "point":53,
+  "submitted_seconds":478
+},
+"65":{
+  "user_id":2,
+  "problem_index":1,
+  "point":100,
+  "submitted_seconds":490
+},
+"66":{
+  "user_id":4,
+  "problem_index":2,
+  "point":6,
+  "submitted_seconds":504
+},
+"67":{
+  "user_id":5,
+  "problem_index":3,
+  "point":68,
+  "submitted_seconds":504
+},
+"68":{
+  "user_id":2,
+  "problem_index":5,
+  "point":51,
+  "submitted_seconds":504
+},
+"69":{
+  "user_id":3,
+  "problem_index":4,
+  "point":100,
+  "submitted_seconds":522
+},
+"70":{
+  "user_id":5,
+  "problem_index":5,
+  "point":100,
+  "submitted_seconds":538
+},
+"71":{
+  "user_id":2,
+  "problem_index":3,
+  "point":59,
+  "submitted_seconds":550
+},
+"72":{
+  "user_id":4,
+  "problem_index":5,
+  "point":11,
+  "submitted_seconds":550
+},
+"73":{
+  "user_id":2,
+  "problem_index":1,
+  "point":0,
+  "submitted_seconds":553
+},
+"74":{
+  "user_id":2,
+  "problem_index":1,
+  "point":34,
+  "submitted_seconds":565
+},
+"75":{
+  "user_id":1,
+  "problem_index":1,
+  "point":100,
+  "submitted_seconds":584
+},
+"76":{
+  "user_id":4,
+  "problem_index":1,
+  "point":85,
+  "submitted_seconds":584
+},
+"77":{
+  "user_id":2,
+  "problem_index":1,
+  "point":38,
+  "submitted_seconds":589
+},
+"78":{
+  "user_id":1,
+  "problem_index":1,
+  "point":100,
+  "submitted_seconds":589
+},
+"79":{
+  "user_id":1,
+  "problem_index":2,
+  "point":20,
+  "submitted_seconds":603
+},
+"80":{
+  "user_id":3,
+  "problem_index":3,
+  "point":29,
+  "submitted_seconds":606
+},
+"81":{
+  "user_id":3,
+  "problem_index":3,
+  "point":10,
+  "submitted_seconds":606
+},
+"82":{
+  "user_id":4,
+  "problem_index":5,
+  "point":45,
+  "submitted_seconds":625
+},
+"83":{
+  "user_id":1,
+  "problem_index":1,
+  "point":0,
+  "submitted_seconds":637
+},
+"84":{
+  "user_id":2,
+  "problem_index":1,
+  "point":45,
+  "submitted_seconds":647
+},
+"85":{
+  "user_id":3,
+  "problem_index":5,
+  "point":99,
+  "submitted_seconds":666
+},
+"86":{
+  "user_id":5,
+  "problem_index":5,
+  "point":82,
+  "submitted_seconds":681
+},
+"87":{
+  "user_id":1,
+  "problem_index":2,
+  "point":69,
+  "submitted_seconds":681
+},
+"88":{
+  "user_id":1,
+  "problem_index":1,
+  "point":100,
+  "submitted_seconds":688
+},
+"89":{
+  "user_id":3,
+  "problem_index":1,
+  "point":0,
+  "submitted_seconds":688
+},
+"90":{
+  "user_id":3,
+  "problem_index":1,
+  "point":100,
+  "submitted_seconds":691
+},
+"91":{
+  "user_id":3,
+  "problem_index":4,
+  "point":100,
+  "submitted_seconds":691
+},
+"92":{
+  "user_id":1,
+  "problem_index":3,
+  "point":100,
+  "submitted_seconds":693
+},
+"93":{
+  "user_id":4,
+  "problem_index":3,
+  "point":16,
+  "submitted_seconds":708
+},
+"94":{
+  "user_id":2,
+  "problem_index":3,
+  "point":28,
+  "submitted_seconds":724
+},
+"95":{
+  "user_id":4,
+  "problem_index":5,
+  "point":75,
+  "submitted_seconds":742
+},
+"96":{
+  "user_id":1,
+  "problem_index":5,
+  "point":100,
+  "submitted_seconds":742
+},
+"97":{
+  "user_id":4,
+  "problem_index":5,
+  "point":100,
+  "submitted_seconds":748
+},
+"98":{
+  "user_id":1,
+  "problem_index":3,
+  "point":0,
+  "submitted_seconds":751
+},
+"99":{
+  "user_id":1,
+  "problem_index":1,
+  "point":0,
+  "submitted_seconds":755
+},
+"100":{
+  "user_id":3,
+  "problem_index":2,
+  "point":0,
+  "submitted_seconds":769
+},

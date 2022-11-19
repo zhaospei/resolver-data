@@ -50,7 +50,7 @@ int main() {
         cout << "  \"point\":" << RandPoint(20, 30) << ",\n";
         cur_time = cur_time + Rand(0, TIME_DISTANCE);
         cout << "  \"submitted_seconds\":" << cur_time << "\n";
-        cout << "},";
+        cout << "},\n";
     }
     return 0;
 }
