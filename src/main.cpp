@@ -46,8 +46,8 @@ int main() {
     cout <<"    \"solutions\":{\n";
     for (int id = 1; id <= NDATA; id++) {
         cout << "       \"" << id << "\":{" << "\n";
-        cout << "         \"user_id\":" << Rand(1, NUSER) << ",\n";
-        cout << "         \"problem_index\":" << Rand(1, NPROBLEM) << ",\n";
+        cout << "         \"user_id\":\"" << Rand(1, NUSER) << "\",\n";
+        cout << "         \"problem_index\":\"" << Rand(1, NPROBLEM) << "\",\n";
         cout << "         \"point\":" << RandPoint(20, 30) << ",\n";
         cur_time = cur_time + Rand(0, TIME_DISTANCE);
         cout << "         \"submitted_seconds\":" << cur_time << "\n";
