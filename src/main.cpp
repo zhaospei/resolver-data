@@ -99,6 +99,7 @@ int main() {
             }
             nsub = i; 
         }
+        int sumpoint = 0;
         for (int i = 1; i <= nsub; i++) {
             int subpoint = RandPoint(30 - (6 - i) * 5, 30 - (i - 1) * 5, nsubtask[curproblem][i]);
             if (i < nsub) {
@@ -106,8 +107,10 @@ int main() {
             } else {
                 cout << "        \""<< i << "\":" << subpoint << "\n";
             }
+            sumpoint += subpoint;
         }
         cout << "      },\n";
+        cout << "      \"point\":"<< sumpoint <<",\n";
         cur_time = cur_time + Rand(0, TIME_DISTANCE);
         cout << "      \"submitted_seconds\":" << cur_time << "\n";
         if (id < NDATA) {
