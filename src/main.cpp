@@ -8,9 +8,9 @@ const string NAME = "data-submissions";
 // Number of data values
 const int NDATA = 100;
 // Number of users
-const int NUSER = 5;
+const int NUSER = 10;
 // Number of problems
-const int NPROBLEM = 5;
+const int NPROBLEM = 6;
 // Max of Point
 const int POINT_MAX = 100;
 // Time distance
@@ -46,9 +46,9 @@ int main() {
     cout <<"    \"solutions\":{\n";
     for (int id = 1; id <= NDATA; id++) {
         cout << "       \"" << id << "\":{" << "\n";
-        cout << "         \"user_id\":\"" << Rand(1, NUSER) << "\",\n";
-        cout << "         \"problem_index\":\"" << Rand(1, NPROBLEM) << "\",\n";
-        cout << "         \"point\":" << RandPoint(20, 30) << ",\n";
+        cout << "         \"user_id\":" << Rand(1, NUSER) << ",\n";
+        cout << "         \"problem_index\":" << Rand(1, NPROBLEM) << ",\n";
+        cout << "         \"point\":" << RandPoint(20, 20) << ",\n";
         cur_time = cur_time + Rand(0, TIME_DISTANCE);
         cout << "         \"submitted_seconds\":" << cur_time << "\n";
         cout << "       },\n";
