@@ -48,15 +48,27 @@ int main() {
     srand(time(NULL));
     freopen((NAME + ".json").c_str(), "w", stdout);
     cout << "{\n";
+    int subtasks[MAX_SUBTASK + 1];
+    for (int i = 1; i <= NPROBLEM; i++) {
+        subtasks[i] = Rand(MIN_SUBTASK, MAX_SUBTASK);
+    }
+    cout <<"  \"problem_sub\":[";
+    for (int i = 1; i <= NPROBLEM; i++) {
+        if (i < NPROBLEM) {
+            cout << subtasks[i] << ", ";
+        } else {
+            cout << subtasks[i];
+        }
+    }
+    cout <<"],\n";
     cout <<"  \"problems\":{\n";
     for (int id = 1; id <= NPROBLEM; id++) {
         cout << "    \"" << id << "\":{" << "\n";
-        int subtasks = Rand(MIN_SUBTASK, MAX_SUBTASK);
         int cur_point = 100;
-        for (int subtask = 1; subtask <= subtasks; subtask++) {
+        for (int subtask = 1; subtask <= subtasks[id]; subtask++) {
             int point;
-            if (subtask < subtasks) {
-                point = Rand(10, cur_point - 10 * (subtasks - subtask + 1));
+            if (subtask < subtasks[id]) {
+                point = Rand(10, cur_point - 10 * (subtasks[id] - subtask + 1));
                 nsubtask[id][subtask] = point;
                 cur_point -= point;
                 cout << "      \"" << subtask << "\":" << point << ",\n";
