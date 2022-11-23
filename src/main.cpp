@@ -84,27 +84,33 @@ int main() {
     cout << "  },\n";
     cout <<"  \"user_id\":{\n";
     for (int id = 1; id <= NUSER; id++) {
-        int curproblem = Rand(1, NPROBLEM);
         cout << "    \"" << id << "\":{ " << "\n";
         cout << "      \"username\":\"user" << id << "\",\n";
         cout << "      \"name\":\"Nguyen Van A" << char(97 + id - 1) << "\",\n";
         cout << "      \"school\":\"School " << char(65 + id - 1) << "\",\n";
         cout << "      \"problems\":{\n";
+        int cnt = 0;
         for (int j = 1; j <= NPROBLEM; j++) {
+            int pass = Rand(1, 20 - j * 5);
+            if (pass == 1) continue;
+            cnt++;
+            if (cnt > 1) {
+                cout << "        },\n";
+            }
             cout << "        \"" << j << "\":{\n";
             cout << "          \"points\":{\n";
             int nsub = 0;
             for (int i = 1; i <= 6; i++) {
-                if (nsubtask[curproblem][i] == 0) {
+                if (nsubtask[j][i] == 0) {
                     break;
                 }
                 nsub = i;
             }
             int frozen_point[7];
             for (int i = 1; i <= nsub; i++) {
-                int subpoint = RandPoint(30 - (6 - i) * 5, 70 - (i - 1) * 10, nsubtask[curproblem][i]);
+                int subpoint = RandPoint(30 - (6 - i) * 5, 70 - (i - 1) * 10, nsubtask[j][i]);
                 while (true) {
-                    frozen_point[i] = RandPoint(30 - (6 - i) * 5, 30 - (i - 1) * 5, nsubtask[curproblem][i]);
+                    frozen_point[i] = RandPoint(30 - (6 - i) * 5, 30 - (i - 1) * 5, nsubtask[j][i]);
                     if (subpoint >= frozen_point[i]) break;
                 }
                 if (i < nsub) {
@@ -123,12 +129,8 @@ int main() {
                 }
             }
             cout << "          }\n";
-            if (j < NPROBLEM) {
-                cout << "        },\n";
-            } else {
-                cout << "        }\n";
-            }
         }
+        if (cnt > 0) cout << "        }\n";
         cout << "      }\n";
         if (id < NUSER) {
             cout << "    },\n";
