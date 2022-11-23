@@ -5,14 +5,11 @@
 using namespace std;
 // Name of file
 const string NAME = "contest";
-// Number of data values
-const int NDATA = 1000;
 // Number of users
 const int NUSER = 12;
 // Number of problems
-const int NPROBLEM = 6;
+const int NPROBLEM = 3;
 // Max of Point
-const int POINT_MAX = 100;
 // Time distance
 const int TIME_DISTANCE = 20;
 // Range of subtasks
@@ -85,51 +82,58 @@ int main() {
         }
     }
     cout << "  },\n";
-    cout <<"  \"solutions\":{\n";
-    for (int id = 1; id <= NDATA; id++) {
-        int curproblem = Rand(1, NPROBLEM);
-        cout << "    \"" << id << "\":{" << "\n";
-        cout << "      \"user_id\":" << Rand(1, NUSER) << ",\n";
-        cout << "      \"problem_index\":" << curproblem << ",\n";
-        cout << "      \"points\":{\n";
-        int nsub = 0;
-        for (int i = 1; i <= 6; i++) {
-            if (nsubtask[curproblem][i] == 0) {
-                break;
-            }
-            nsub = i; 
-        }
-        int sumpoint = 0;
-        for (int i = 1; i <= nsub; i++) {
-            int subpoint = RandPoint(30 - (6 - i) * 5, 30 - (i - 1) * 5, nsubtask[curproblem][i]);
-            if (i < nsub) {
-                cout << "        \""<< i << "\":" << subpoint << ",\n";
-            } else {
-                cout << "        \""<< i << "\":" << subpoint << "\n";
-            }
-            sumpoint += subpoint;
-        }
-        cout << "      },\n";
-        cout << "      \"point\":"<< sumpoint <<",\n";
-        cur_time = cur_time + Rand(0, TIME_DISTANCE);
-        cout << "      \"submitted_seconds\":" << cur_time << "\n";
-        if (id < NDATA) {
-            cout << "    },\n";
-        } else {
-            cout << "    }\n";
-        }
-    }
-    cout <<"  },\n";
-    cout <<"  \"users\":{\n";
+    cout <<"  \"user_id\":{\n";
     for (int id = 1; id <= NUSER; id++) {
-        cout << "    \"" << id << "\":{" << "\n";
+        int curproblem = Rand(1, NPROBLEM);
+        cout << "    \"" << id << "\":{ " << "\n";
         cout << "      \"username\":\"user" << id << "\",\n";
         cout << "      \"name\":\"Nguyen Van A" << char(97 + id - 1) << "\",\n";
-        cout << "      \"school\":\"School " << char(65 + id - 1) << "\"\n";
+        cout << "      \"school\":\"School " << char(65 + id - 1) << "\",\n";
+        cout << "      \"problems\":{\n";
+        for (int j = 1; j <= NPROBLEM; j++) {
+            cout << "        \"" << j << "\":{\n";
+            cout << "          \"points\":{\n";
+            int nsub = 0;
+            for (int i = 1; i <= 6; i++) {
+                if (nsubtask[curproblem][i] == 0) {
+                    break;
+                }
+                nsub = i;
+            }
+            int frozen_point[7];
+            for (int i = 1; i <= nsub; i++) {
+                int subpoint = RandPoint(30 - (6 - i) * 5, 70 - (i - 1) * 10, nsubtask[curproblem][i]);
+                while (true) {
+                    frozen_point[i] = RandPoint(30 - (6 - i) * 5, 30 - (i - 1) * 5, nsubtask[curproblem][i]);
+                    if (subpoint >= frozen_point[i]) break;
+                }
+                if (i < nsub) {
+                    cout << "            \""<< i << "\":" << subpoint << ",\n";
+                } else {
+                    cout << "            \""<< i << "\":" << subpoint << "\n";
+                }
+            }
+            cout << "          },\n";
+            cout << "          \"frozen_points\":{\n";
+            for (int i = 1; i <= nsub; i++) {
+                if (i < nsub) {
+                    cout << "            \""<< i << "\":" << frozen_point[i] << ",\n";
+                } else {
+                    cout << "            \""<< i << "\":" << frozen_point[i] << "\n";
+                }
+            }
+            cout << "          }\n";
+            if (j < NPROBLEM) {
+                cout << "        },\n";
+            } else {
+                cout << "        }\n";
+            }
+        }
+        cout << "      }\n";
         if (id < NUSER) {
             cout << "    },\n";
         } else {
-            cout << "    }\n"; 
+            cout << "    }\n";
         }
     }
     cout <<"  }\n";
