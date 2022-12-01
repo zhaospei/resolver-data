@@ -58,6 +58,15 @@ int main() {
         }
     }
     cout <<"],\n";
+    cout <<"  \"sub_frozen\":[";
+    for (int i = 1; i <= NPROBLEM; i++) {
+        if (i < NPROBLEM) {
+            cout << Rand(1, subtasks[i] + 1) << ", ";
+        } else {
+            cout << Rand(1, subtasks[i] + 1);
+        }
+    }
+    cout <<"],\n";
     cout <<"  \"problems\":{\n";
     for (int id = 1; id <= NPROBLEM; id++) {
         cout << "    \"" << id << "\":{" << "\n";
@@ -82,12 +91,13 @@ int main() {
         }
     }
     cout << "  },\n";
-    cout <<"  \"user_id\":{\n";
+    cout <<"  \"users\":{\n";
     for (int id = 1; id <= NUSER; id++) {
         cout << "    \"" << id << "\":{ " << "\n";
         cout << "      \"username\":\"user" << id << "\",\n";
-        cout << "      \"name\":\"Nguyen Van A" << char(97 + id - 1) << "\",\n";
+        cout << "      \"name\":\"Nguyen Van A" << char(65 + id - 1) << "\",\n";
         cout << "      \"school\":\"School " << char(65 + id - 1) << "\",\n";
+        cout << "      \"last_submission\":" << Rand(1, 100) << ",\n";
         cout << "      \"problems\":{\n";
         int cnt = 0;
         for (int j = 1; j <= NPROBLEM; j++) {
